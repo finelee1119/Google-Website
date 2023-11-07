@@ -1,0 +1,153 @@
+body {
+    display: contents;
+
+    /* 개발자 도구 - 스타일 - element.style - 
+    속성 하나씩 대보면서 원하는 스타일 고르기 */
+
+    /*
+    display: block (수직 배치)
+    display: flex (수평 배치)
+    display: inline (한줄로 배치)
+     */
+}
+
+.navbar {
+    margin: 20px; /* 메뉴 바깥 여백 주기 */
+    font-size: 14px;
+}
+
+.navbar-left {
+    float: left; /* 상단메뉴 왼쪽 정렬 */
+    margin-left: 30px;
+}
+
+.navbar-right {
+    float: right; /* 상단메뉴 오른쪽 정렬 */
+    margin-right: 30px;
+}
+
+.nav-item {
+    text-decoration: none; /* 메뉴 밑줄 지우기 */
+    color: black;
+    margin-right: 15px; /* 메뉴 간격 벌리기 */
+}
+
+.nav-item:hover { /* 마우스 올릴 시 이벤트 주기 */
+    text-decoration: underline;
+}
+
+
+.main {
+    margin-top: 120px; /* 상단에 공간을 줘서 밑으로 떨어뜨리기 */
+    text-align: center; /* 메인 요소 중앙 정렬 */
+}
+
+.input-area {
+    margin-bottom: 20px; /* 검색창 위치 조절 */
+}
+
+.input-box { /* 검색박스 꾸미기: 개발자도구 참고 */
+    width: 400px;
+    height: 46px;
+    padding-left: 40px; /* 내부 패딩으로 좁혀서 커서 시작 위치 지정 */
+    padding-right: 130px; /* 내부 패딩으로 좁혀서 커서 종료 위치 지정 */
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+}
+
+.search-icon {
+    position: relative; /* 현재 위치로부터 위치 설정 */
+    left: 40px; /* 왼쪽에서부터 40px 이동 */
+    color: #9aa0a6;
+}
+
+.keyboard-icon {
+    position: relative; /* 현재 위치로부터 위치 설정 */
+    right: 125px; /* 오른쪽에서부터 125px 이동 */
+    color: #9aa0a6; 
+}
+
+.mic-icon {
+    position: relative; /* 현재 위치로부터 위치 설정 */
+    right: 105px; /* 오른쪽에서부터 105px 이동 */
+    color: #9aa0a6; 
+}
+
+.camera-icon {
+    position: relative; /* 현재 위치로부터 위치 설정 */
+    right: 90px; /* 오른쪽에서부터 90px 이동 */
+    color: #9aa0a6; 
+}
+
+.button-area {
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+}
+
+.button-style {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-family: Apple SD Gothic Neo,arial,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-style:hover { 
+    /* 개발자도구-우클릭-강제 실행 상태-:hover */
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+
+.footer {
+    position: absolute; /* 절대값 기준으로 위치 */
+    bottom: 0px; /* 바닥에 붙이기 */
+    background-color: #f2f2f2;
+
+    width: 100%; /* 부모(body) 기준 - 푸터 쫙 펴주기 */
+}
+
+.first-line {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+.second-line {
+    padding: 25px 35px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .54);
+
+    position: relative; /* 요소를 상대 위치로 설정합니다 */
+    bottom: 10px; /* 원하는 거리만큼 위로 올립니다 */
+}
+
+.second-line-left {
+    float: left;
+}
+
+.second-line-right {
+    float: right;
+}
+
+.second-line-item {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    margin-right: 20px;
+}
+
+.second-line-item:hover {
+    text-decoration: underline;
+}
